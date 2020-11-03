@@ -1,7 +1,7 @@
 # SQL_Test1
 
 -- Note desc for Completion and Corrective Action Comments --
-
+-- Test comment to branch B1
 With T1_CC as
 (select distinct SRVREQ_WID ,  
 listagg(to_char(CREATED_DT,'DD-MON-YYYY HH:MI:SS AM') ||' - '|| Note_Desc, '; ' ) within group (order by CREATED_DT desc ) as Completion_Comments
